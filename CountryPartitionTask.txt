@@ -58,7 +58,7 @@ hive> create table country_IND
 
 For NYC
 hive> create table country_NYC
-    > (customer_Name varchar(20),customer_ID varchar(12),Customer_Open_Date DATE,Last_Consulted_Date DATE,Vaccination_Type varchar(5),Doctor_Consulted varchar(20),State varchar(5),Date_of_Birth DATE,Active_customer varchar(3))
+    >(customer_Name varchar(20),customer_ID varchar(12),Customer_Open_Date DATE,Last_Consulted_Date DATE,Vaccination_Type varchar(5),Doctor_Consulted varchar(20),State varchar(5),Date_of_Birth DATE,Active_customer varchar(3))
     > row format delimited fields terminated by ','
     > location '/user/country_partition/country=NYC';
 	
@@ -72,5 +72,5 @@ For USA
 hive> create table country_USA
     > (customer_Name varchar(20),customer_ID varchar(12),Customer_Open_Date DATE,Last_Consulted_Date DATE,Vaccination_Type varchar(5),Doctor_Consulted varchar(20),State varchar(5),Date_of_Birth DATE,Active_customer varchar(3))
     > row format delimited fields terminated by ','
-    > location '/user/country_partition_report/country=USA';
+    > location '/user/country_partition/country=USA';
 	
