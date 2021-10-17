@@ -25,7 +25,7 @@ hive>  create table country_partition
     >  (customer_Name varchar(20),customer_ID varchar(12),Customer_Open_Date DATE,Last_Consulted_Date DATE,Vaccination_Type varchar(5),Doctor_Consulted varchar(20),State varchar(5),Date_of_Birth DATE,Active_customer varchar(3))
     > PARTITIONED BY (Country varchar(7))
     > row format delimited fields terminated by ','
-    > stored as textfile location '/user/hive/country_partition/';
+    > stored as textfile location '/user/country_partition/';
 
 step 4=
 Set some permissins for partitions. 
@@ -49,29 +49,29 @@ for AU
 hive> create table country_AU
     > (customer_Name varchar(20),customer_ID varchar(12),Customer_Open_Date DATE,Last_Consulted_Date DATE,Vaccination_Type varchar(5),Doctor_Consulted varchar(20),State varchar(5),Date_of_Birth DATE,Active_customer varchar(3))
     > row format delimited fields terminated by ','
-    > location '/user/hive/country_partition_report/country=AU';
+    > location '/user/country_partition_report/country=AU';
 
 For IND	
 hive> create table country_IND
     > (customer_Name varchar(20),customer_ID varchar(12),Customer_Open_Date DATE,Last_Consulted_Date DATE,Vaccination_Type varchar(5),Doctor_Consulted varchar(20),State varchar(5),Date_of_Birth DATE,Active_customer varchar(3))
     > row format delimited fields terminated by ','
-    > location '/user/hive/country_partition_report/country=IND';
+    > location '/user/country_partition_report/country=IND';
 
 For NYC
 hive> create table country_NYC
     > (customer_Name varchar(20),customer_ID varchar(12),Customer_Open_Date DATE,Last_Consulted_Date DATE,Vaccination_Type varchar(5),Doctor_Consulted varchar(20),State varchar(5),Date_of_Birth DATE,Active_customer varchar(3))
     > row format delimited fields terminated by ','
-    > location '/user/hive/country_partition_report/country=NYC';
+    > location '/user/country_partition_report/country=NYC';
 	
 For PHIL
 hive> create table country_PHIL
     > (customer_Name varchar(20),customer_ID varchar(12),Customer_Open_Date DATE,Last_Consulted_Date DATE,Vaccination_Type varchar(5),Doctor_Consulted varchar(20),State varchar(5),Date_of_Birth DATE,Active_customer varchar(3))
     > row format delimited fields terminated by ','
-    > location '/user/hive/country_partition_report/country=PHIL';
+    > location '/user/country_partition_report/country=PHIL';
 	
 For USA	
 hive> create table country_USA
     > (customer_Name varchar(20),customer_ID varchar(12),Customer_Open_Date DATE,Last_Consulted_Date DATE,Vaccination_Type varchar(5),Doctor_Consulted varchar(20),State varchar(5),Date_of_Birth DATE,Active_customer varchar(3))
     > row format delimited fields terminated by ','
-    > location '/user/hive/country_partition_report/country=USA';
+    > location '/user/country_partition_report/country=USA';
 	
