@@ -13,7 +13,7 @@ Create new database for store our data and crate table within it.
 
 hive> create database exam;
 hive> create external table Hospital
-    > (vlank_col char(1),H varchar(2),Customer_Name varchar(20),Customer_ID varchar(12),Customer_Open_Date string,Last_Consulted_Date string,Vaccination_Type varchar(5),Doctor_Consulted varchar(20),State varchar(5),Country varchar(7),Date_of_Birth string,Active_customer varchar(3))
+    > (blank_col char(1),H varchar(2),Customer_Name varchar(20),Customer_ID varchar(12),Customer_Open_Date string,Last_Consulted_Date string,Vaccination_Type varchar(5),Doctor_Consulted varchar(20),State varchar(5),Country varchar(7),Date_of_Birth string,Active_customer varchar(3))
     > row format delimited fields terminated by '|'
     > location '/user/hive/warehouse/exam.db/Hospital'
     > tblproperties ("skip.header.line.count"="1");
